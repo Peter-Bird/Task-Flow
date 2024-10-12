@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Header and Navigation */
+header {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    width: 200px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-text {
+    text-align: left;
+}
+
+.menu-icon {
+    text-align: right;
+}
+
+/* Style for spacer */
+.dropdown-menu hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+/* Task Form Styling */
+#task-form-section {
+    padding: 20px;
+}
+
+#task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#task-form input,
+#task-form select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#task-form input[type="text"] {
+    flex: 1 1 auto;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Task List Styling */
+#task-list-section {
+    padding: 20px;
+}
+
+.group {
+    margin-bottom: 20px;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group-header h2 {
+    margin: 0 10px;
+    flex: 1;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.task-list {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    display: block; /* Show all groups by default */
+}
+
+/* Task Item Styling */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+}
+
+.task-item .priority-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.task-item .task-text {
+    margin-left: 10px;
+    flex: 1;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: green;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.action-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.action-buttons button:hover {
+    color: #007BFF;
+}
+
+/* User Guide and Prompt Styling */
+#user-guide-section,
+#prompt-section {
+    padding: 20px;
+}
+
+#user-guide-section h2,
+#prompt-section h2 {
+    margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hamburger-menu {
+        top: 15px;
+        right: 15px;
+    }
+
+    #task-form {
+        flex-direction: column;
+    }
+
+    #add-task-btn {
+        width: 100%;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-buttons {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .action-buttons button {
+        margin-left: 20px;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}

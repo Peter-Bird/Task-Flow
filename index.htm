@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>TaskFlow</h1>
+        <div class="hamburger-menu" id="hamburger-menu">
+            &#9776;
+        </div>
+        <nav class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <!-- Navigation Links -->
+                <li>
+                    <a href="#" id="task-list-link">
+                        <span class="menu-text">Task List</span>
+                        <span class="menu-icon">📋</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="user-guide-link">
+                        <span class="menu-text">User Guide</span>
+                        <span class="menu-icon">❓</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="prompt-link">
+                        <span class="menu-text">Prompt</span>
+                        <span class="menu-icon">💡</span>
+                    </a>
+                </li>
+                <hr>
+                <!-- Task Management Commands -->
+                <li>
+                    <a href="#" id="export-tasks-link">
+                        <span class="menu-text">Export Tasks</span>
+                        <span class="menu-icon">⬇️</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="import-tasks-link">
+                        <span class="menu-text">Import Tasks</span>
+                        <span class="menu-icon">⬆️</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="replace-tasks-link">
+                        <span class="menu-text">Replace Tasks</span>
+                        <span class="menu-icon">🔄</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="delete-all-tasks-link">
+                        <span class="menu-text">Delete All Tasks</span>
+                        <span class="menu-icon">🗑️</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Task Addition Form -->
+        <section id="task-form-section">
+            <form id="task-form">
+                <input type="text" id="task-text" placeholder="Task Description *" required>
+                <input type="text" id="task-group" placeholder="Group Name (Optional)">
+                <select id="task-priority">
+                    <option value="Medium" selected>Medium (🟡)</option>
+                    <option value="High">High (🔴)</option>
+                    <option value="Low">Low (🔵)</option>
+                </select>
+                <button type="submit" id="add-task-btn">➕</button>
+            </form>
+        </section>
+
+        <!-- Task List -->
+        <section id="task-list-section">
+            <!-- Tasks will be dynamically inserted here -->
+        </section>
+
+        <!-- User Guide Section -->
+        <section id="user-guide-section" style="display: none;">
+            <h2>User Guide</h2>
+            <p>Welcome to TaskFlow, your personal task management tool!</p>
+            <h3>Features:</h3>
+            <ul>
+                <li>Add, edit, and delete tasks.</li>
+                <li>Organize tasks into groups.</li>
+                <li>Set priority levels for tasks.</li>
+                <li>Mark tasks as complete.</li>
+                <li>Export and import tasks in JSON format.</li>
+                <li>Replace existing tasks with imported tasks.</li>
+                <li>Delete all tasks at once.</li>
+                <li>Tasks are saved locally on your browser.</li>
+            </ul>
+            <h3>How to Use:</h3>
+            <p>Use the form to add tasks, specify group names to categorize, and select priority levels.</p>
+            <p>Click on the edit (✏️) or delete (🗑️) icons to modify tasks.</p>
+            <p>Use the hamburger menu to navigate between the Task List, User Guide, and manage tasks.</p>
+            <h3>Exporting Tasks:</h3>
+            <p>Select "Export Tasks" from the hamburger menu to copy your tasks to the clipboard in JSON format.</p>
+            <h3>Importing Tasks:</h3>
+            <p>Copy a JSON-formatted task list to your clipboard, then select "Import Tasks" to add them to your existing tasks.</p>
+            <h3>Replacing Tasks:</h3>
+            <p>Copy a JSON-formatted task list to your clipboard, then select "Replace Tasks" to replace your current tasks.</p>
+            <h3>Deleting All Tasks:</h3>
+            <p>Select "Delete All Tasks" to remove all tasks from your list.</p>
+            <h3>Viewing the AI Prompt:</h3>
+            <p>Select "Prompt" from the hamburger menu to view the original AI prompt used to build this application.</p>
+        </section>
+
+        <!-- Prompt Section -->
+        <section id="prompt-section" style="display: none;">
+            <h2>AI Prompt</h2>
+            <p id="prompt-content">
+                <!-- The prompt content will be inserted here -->
+            </p>
+        </section>
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
