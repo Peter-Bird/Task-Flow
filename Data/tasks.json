@@ -1,43 +1,8 @@
 [
   {
-    "id": 1728720244157,
-    "text": "Create invoice for September Malam",
-    "group": "Finance",
-    "priority": "High",
-    "completed": false
-  },
-  {
-    "id": 1728720262431,
-    "text": "Post invoice into Nipendu (63.994.30)",
-    "group": "Finance",
-    "priority": "High",
-    "completed": false
-  },
-  {
-    "id": 1728720282672,
-    "text": "Create an email julian@cosnos.com",
-    "group": "Cosnos",
-    "priority": "Medium",
-    "completed": false
-  },
-  {
-    "id": 1728720310873,
-    "text": "Attach Julian's email to Proton",
-    "group": "Cosnos",
-    "priority": "Medium",
-    "completed": false
-  },
-  {
     "id": 1728720339399,
     "text": "Create an email for Sigal",
     "group": "Cosnos",
-    "priority": "High",
-    "completed": false
-  },
-  {
-    "id": 1728720362667,
-    "text": "Create a download page for Cosnos files",
-    "group": "ToolMaster",
     "priority": "Medium",
     "completed": false
   },
@@ -57,7 +22,49 @@
   },
   {
     "id": 1728723631656,
-    "text": "add a short data struct help",
+    "text": "Add a short data struct help",
+    "group": "Task Manager",
+    "priority": "Medium",
+    "completed": false
+  },
+  {
+    "id": 1728736118211,
+    "text": "Add a page for completed tasks",
+    "group": "Task Manager",
+    "priority": "Medium",
+    "completed": false
+  },
+  {
+    "id": 1728736192681,
+    "text": "Reduce the size of the plus icon",
+    "group": "Task Manager",
+    "priority": "Low",
+    "completed": false
+  },
+  {
+    "id": 1729506634098,
+    "text": "Fix 403 Error on Domain",
+    "group": "Cosnos",
+    "priority": "Medium",
+    "completed": false
+  },
+  {
+    "id": 1729506671794,
+    "text": "Setup Original Cosnos code",
+    "group": "Cosnos",
+    "priority": "Medium",
+    "completed": false
+  },
+  {
+    "id": 1729506697287,
+    "text": "Add Download projects to Sigal's design",
+    "group": "Cosnos",
+    "priority": "Medium",
+    "completed": false
+  },
+  {
+    "id": 1729506746861,
+    "text": "Enable access to code from the application",
     "group": "Task Manager",
     "priority": "Medium",
     "completed": false
