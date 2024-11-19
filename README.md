@@ -1,6 +1,6 @@
-# TaskFlow: A Simple Task Management Web Application
+# Task-Flow: A Simple Task Management Web Application
 
-TaskFlow is a user-friendly and responsive task management application built with HTML, CSS, and JavaScript. It allows users to manage their tasks effectively, offering features like grouping, prioritization, task completion, and import/export functionality.
+Task-Flow is a user-friendly and responsive task management application built with HTML, CSS, and JavaScript. It allows users to manage their tasks effectively, offering features like grouping, prioritization, task completion, and import/export functionality.
 
 ## Features
 
@@ -50,7 +50,7 @@ TaskFlow is a user-friendly and responsive task management application built wit
 
 ## Responsive Design
 
-TaskFlow adapts to various screen sizes, ensuring usability on mobile devices and desktops. The hamburger menu and task list are optimized for smaller screens.
+Task-Flow adapts to various screen sizes, ensuring usability on mobile devices and desktops. The hamburger menu and task list are optimized for smaller screens.
 
 ## Future Enhancements
 
@@ -64,4 +64,4 @@ This project is licensed under the MIT License.
 
 ## Author
 
-TaskFlow was generated based on a comprehensive AI prompt to create an intuitive and robust task management tool.
+Task-Flow was generated based on a comprehensive AI prompt to create an intuitive and robust task management tool.
